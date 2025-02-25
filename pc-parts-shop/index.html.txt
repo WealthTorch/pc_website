@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Futuristic PC Parts Shop</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts (Optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="logo">NeonTech</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Futuristic PC Parts</h1>
+    <p>Upgrade your rig with the latest in neon tech and performance hardware.</p>
+    <a href="#products" class="btn-hero">Explore Products</a>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Graphics Card" />
+        <h3>Galaxy RTX 5090</h3>
+        <p class="price">$999</p>
+        <button class="btn-add" onclick="addToCart('Galaxy RTX 5090')">Add to Cart</button>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Motherboard" />
+        <h3>Neo Z-Board</h3>
+        <p class="price">$299</p>
+        <button class="btn-add" onclick="addToCart('Neo Z-Board')">Add to Cart</button>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="RAM" />
+        <h3>HyperDrive RAM 32GB</h3>
+        <p class="price">$149</p>
+        <button class="btn-add" onclick="addToCart('HyperDrive RAM 32GB')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer Section -->
+  <footer id="contact" class="footer">
+    <h2>Contact Us</h2>
+    <p>Email: support@neontech.com</p>
+    <p>Phone: +1 (123) 456-7890</p>
+    <p class="copyright">
+      &copy; <span id="year"></span> NeonTech. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Link to JS -->
+  <script src="script.js"></script>
+</body>
+</html>

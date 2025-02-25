@@ -1,0 +1,10 @@
+// Update footer year automatically
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
+}
+
+// Simulate adding to cart
+function addToCart(productName) {
+  alert(`Added "${productName}" to your cart!`);
+}
